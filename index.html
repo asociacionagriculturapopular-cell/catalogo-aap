@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Digital de Plantas Medicinales - AAP</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Catálogo digital de plantas medicinales y aromáticas de la Asociación AAP. Descubre las propiedades, usos y contraindicaciones de cultivos agroecológicos.">
+    <meta name="keywords" content="plantas medicinales, plantas aromáticas, cannabis medicinal, romero, pronto alivio, menta, cidron, toronjil, albahaca, colombia, AAP">
+    <meta name="author" content="Asociación AAP">
+
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://catalogo-aap.netlify.app/">
+    <meta property="og:title" content="Catálogo Digital de Plantas Medicinales - AAP">
+    <meta property="og:description" content="Encuentra plantas aromáticas y cannabis medicinal cultivados de forma agroecológica. Haz tu pedido directo a WhatsApp.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/1d/Rosmarinus_officinalis.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Catálogo Digital de Plantas Medicinales - AAP">
+    <meta name="twitter:description" content="Encuentra plantas aromáticas y cannabis medicinal cultivados de forma agroecológica. Haz tu pedido directo a WhatsApp.">
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/1/1d/Rosmarinus_officinalis.jpg">
+
+    <!-- Favicon (SVG Emoji) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <div class="logo-text">Catálogo<span>AAP</span></div>
+            </a>
+            
+            <!-- Shopping Cart Toggle -->
+            <button class="cart-toggle-btn" id="cartToggleBtn" aria-label="Ver carrito">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <div class="cart-badge" id="cartBadge">0</div>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Catálogo Digital de Plantas Medicinales</h1>
+            <p>Descubre el poder terapéutico de la naturaleza a través de nuestra selección agroecológica. Fichas técnicas, beneficios e indicaciones de uso seguro.</p>
+        </section>
+
+        <!-- Controls (Filters & Search) -->
+        <div class="controls-wrapper">
+            <div class="controls">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todas las plantas</button>
+                    <button class="filter-btn" data-filter="hierba">Hierbas Tradicionales</button>
+                    <button class="filter-btn" data-filter="cannabis">Cannabis Terapéutico</button>
+                </div>
+                <div class="search-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Buscar planta o propiedad...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Catalog Grid -->
+        <div class="catalog-grid" id="catalogGrid">
+            
+            <!-- Plant 1: Romero -->
+            <div class="plant-card" data-category="hierba">
+                <span class="badge">Estimulante</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Rosmarinus_officinalis.jpg" alt="Romero">
+                    <span class="price-tag">$12.000 <span>/ Bolsa 150g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Romero</h2>
+                        <span class="scientific-name">Salvia rosmarinus</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Estimula la circulación y alivia dolores musculares y articulares.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Infusión de hojas secas para mejorar la digestión.</li>
+                            <li>Alcohol o aceite macerado para masajes en zonas adoloridas.</li>
+                            <li>Enjuague capilar para fortalecer el cuero cabelludo.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">Evitar su consumo en el embarazo y en personas con cálculos biliares.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="romero" data-name="Romero (Bolsa 150g)" data-price="12000" data-img="https://upload.wikimedia.org/wikipedia/commons/1/1d/Rosmarinus_officinalis.jpg">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 2: Pronto Alivio -->
+            <div class="plant-card" data-category="hierba">
+                <span class="badge">Calmante</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Lippia_alba_-_Pronto_alivio.jpg" alt="Pronto Alivio">
+                    <span class="price-tag">$8.500 <span>/ Bolsa 100g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Pronto Alivio</h2>
+                        <span class="scientific-name">Lippia alba</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Calmante natural que alivia la ansiedad y espasmos digestivos.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Infusión de las hojas para disminuir el estrés y conciliar el sueño.</li>
+                            <li>Té caliente después de las comidas para reducir cólicos y gases.</li>
+                            <li>Compresas tópicas con la infusión para calmar irritaciones cutáneas.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">No recomendado durante el primer trimestre de embarazo ni en lactancia.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="pronto-alivio" data-name="Pronto Alivio (Bolsa 100g)" data-price="8500" data-img="https://upload.wikimedia.org/wikipedia/commons/c/c9/Lippia_alba_-_Pronto_alivio.jpg">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 3: Cannabis - Aura Clara -->
+            <div class="plant-card" data-category="cannabis">
+                <span class="badge">CBD Dominante</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="Cnavis/AND00528.JPG" alt="Cannabis Aura Clara">
+                    <span class="price-tag">$40.000 <span>/ Bolsa 5g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Cannabis "Aura Clara"</h2>
+                        <span class="scientific-name">Cannabis sativa</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Alivia eficazmente la ansiedad, inflamación y dolores crónicos leves.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Gotas de aceite sublingual de extracto puro de CBD por las mañanas.</li>
+                            <li>Bálsamos hidratantes corporales para inflamación localizada.</li>
+                            <li>Infusiones terapéuticas preparadas con grasas saludables (leche).</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">Puede interactuar con fármacos anticoagulantes y hepáticos.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="cnavis-aura" data-name="Cannabis 'Aura Clara' (5g)" data-price="40000" data-img="Cnavis/AND00528.JPG">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                        <button class="gallery-btn" data-images="Cnavis/AND00528.JPG,Cnavis/AND00535.JPG,Cnavis/AND00543.JPG" data-title="Cannabis 'Aura Clara'">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            Ver Galería (3 fotos)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 4: Cannabis - Sol Dorado -->
+            <div class="plant-card" data-category="cannabis">
+                <span class="badge">THC Dominante</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="Cnavis/AND01389.JPG" alt="Cannabis Sol Dorado">
+                    <span class="price-tag">$40.000 <span>/ Bolsa 5g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Cannabis "Sol Dorado"</h2>
+                        <span class="scientific-name">Cannabis sativa</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Estimula el apetito y alivia dolores neuropáticos y oncológicos.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Aceite sublingual en dosis de noche controladas médicamente.</li>
+                            <li>Ungüento intensivo para alivio neuropático focalizado.</li>
+                            <li>Uso mediante vaporizadores de grado medicinal autorizados.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">Contraindicado en pacientes con cardiopatías graves o arritmias.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="cnavis-sol" data-name="Cannabis 'Sol Dorado' (5g)" data-price="40000" data-img="Cnavis/AND01389.JPG">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                        <button class="gallery-btn" data-images="Cnavis/AND01389.JPG,Cnavis/AND01396.JPG,Cnavis/AND01397.JPG,Cnavis/AND01424.JPG,Cnavis/AND01427.JPG" data-title="Cannabis 'Sol Dorado'">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            Ver Galería (5 fotos)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 5: Cannabis - Bruma Suave -->
+            <div class="plant-card" data-category="cannabis">
+                <span class="badge">CBD/CBG Equilibrada</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="Cnavis/AND01464.JPG" alt="Cannabis Bruma Suave">
+                    <span class="price-tag">$40.000 <span>/ Bolsa 5g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Cannabis "Bruma Suave"</h2>
+                        <span class="scientific-name">Cannabis sativa</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Alivio neuroprotector que reduce inflamación intestinal y ocular.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Aceite sublingual de amplio espectro (CBD + CBG).</li>
+                            <li>Cremas dérmicas para eccema, psoriasis y acné severo.</li>
+                            <li>Cápsulas blandas estandarizadas para dolores crónicos viscerales.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">No recomendado en menores de edad salvo bajo estricta indicación médica.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="cnavis-bruma" data-name="Cannabis 'Bruma Suave' (5g)" data-price="40000" data-img="Cnavis/AND01464.JPG">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                        <button class="gallery-btn" data-images="Cnavis/AND01464.JPG,Cnavis/AND01482.JPG,Cnavis/AND01484.JPG,Cnavis/AND01499.JPG" data-title="Cannabis 'Bruma Suave'">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            Ver Galería (4 fotos)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 6: Cannabis - Noche Serena -->
+            <div class="plant-card" data-category="cannabis">
+                <span class="badge">Indica Relax (1:1)</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="Cnavis/AND01520.JPG" alt="Cannabis Noche Serena">
+                    <span class="price-tag">$40.000 <span>/ Bolsa 5g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Cannabis "Noche Serena"</h2>
+                        <span class="scientific-name">Cannabis sativa</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Induce sueño reparador profundo y mitiga espasmos musculares nocturnos.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Gotas sublinguales tomadas 30 a 60 minutos antes de dormir.</li>
+                            <li>Crema de masaje muscular relajante para piernas y espalda.</li>
+                            <li>Infusión nocturna en base oleosa para insomnio crónico severo.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">Provoca somnolencia. Evitar conducir o manejar maquinaria tras su toma.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="cnavis-noche" data-name="Cannabis 'Noche Serena' (5g)" data-price="40000" data-img="Cnavis/AND01520.JPG">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                        <button class="gallery-btn" data-images="Cnavis/AND01520.JPG,Cnavis/AND01522.JPG,Cnavis/AND01524.JPG,Cnavis/AND01525.JPG,Cnavis/AND01527.JPG,Cnavis/AND01528.JPG,Cnavis/AND01529.JPG,Cnavis/AND01532.JPG,Cnavis/AND01533.JPG,Cnavis/AND01536.JPG" data-title="Cannabis 'Noche Serena'">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            Ver Galería (10 fotos)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 7: Menta -->
+            <div class="plant-card" data-category="hierba">
+                <span class="badge">Digestiva</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="Cnavis/Menta.webp" alt="Menta">
+                    <span class="price-tag">$10.000 <span>/ Bolsa 100g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Menta</h2>
+                        <span class="scientific-name">Mentha x piperita</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Alivia el dolor de cabeza y mejora la digestión.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Infusión de hojas frescas o secas después de comer.</li>
+                            <li>Aceite esencial diluido aplicado en sienes para migraña.</li>
+                            <li>Inhalación de vapor de menta para despejar vías respiratorias.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">Evitar en personas con reflujo gastroesofágico o acidez estomacal.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="menta" data-name="Menta (Bolsa 100g)" data-price="10000" data-img="Cnavis/Menta.webp">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 8: Albahaca blanca -->
+            <div class="plant-card" data-category="hierba">
+                <span class="badge">Aromática</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Ocimum_basilicum_001.JPG" alt="Albahaca blanca">
+                    <span class="price-tag">$9.000 <span>/ Bolsa 100g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Albahaca blanca</h2>
+                        <span class="scientific-name">Ocimum basilicum</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Combate la fatiga mental y estimula el apetito.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Té de albahaca para calmar el dolor estomacal.</li>
+                            <li>Compresas de infusión para aliviar picaduras de insectos.</li>
+                            <li>Consumo en ensaladas y guisos como condimento digestivo.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">Evitar su uso medicinal durante el embarazo y lactancia.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="albahaca-blanca" data-name="Albahaca blanca (Bolsa 100g)" data-price="9000" data-img="https://upload.wikimedia.org/wikipedia/commons/a/ae/Ocimum_basilicum_001.JPG">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 9: Cidrón -->
+            <div class="plant-card" data-category="hierba">
+                <span class="badge">Relajante</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="Cnavis/cidron.png" alt="Cidrón">
+                    <span class="price-tag">$11.000 <span>/ Bolsa 100g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Cidrón</h2>
+                        <span class="scientific-name">Aloysia citriodora</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Calma los nervios y alivia los cólicos estomacales.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Infusión nocturna para conciliar un sueño reparador.</li>
+                            <li>Bebida caliente para reducir la hinchazón y gases.</li>
+                            <li>Vaporizaciones faciales para tonificar y refrescar la piel.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">No consumir de forma prolongada en caso de insuficiencia renal.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="cidron" data-name="Cidrón (Bolsa 100g)" data-price="11000" data-img="Cnavis/cidron.png">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 10: Hierbabuena -->
+            <div class="plant-card" data-category="hierba">
+                <span class="badge">Digestiva</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Mentha_spicata_01.jpg" alt="Hierbabuena">
+                    <span class="price-tag">$8.000 <span>/ Bolsa 100g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Hierbabuena</h2>
+                        <span class="scientific-name">Mentha spicata</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Alivia náuseas y reduce la inflamación digestiva.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Infusión de hojas para calmar el malestar estomacal.</li>
+                            <li>Masticar hojas limpias para combatir el mal aliento.</li>
+                            <li>Compresas tibias para relajar tensiones musculares.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">Consumir con precaución en personas propensas a alergias respiratorias.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="hierbabuena" data-name="Hierbabuena (Bolsa 100g)" data-price="8000" data-img="https://upload.wikimedia.org/wikipedia/commons/e/ed/Mentha_spicata_01.jpg">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant 11: Toronjil -->
+            <div class="plant-card" data-category="hierba">
+                <span class="badge">Calmante</span>
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="Cnavis/toronjil.jpg" alt="Toronjil">
+                    <span class="price-tag">$10.000 <span>/ Bolsa 100g</span></span>
+                </div>
+                <div class="card-body">
+                    <div class="plant-header">
+                        <h2 class="plant-title">Toronjil</h2>
+                        <span class="scientific-name">Melissa officinalis</span>
+                    </div>
+                    <div class="benefit-section">
+                        <div class="benefit-title">Beneficio principal</div>
+                        <div class="benefit-text">Reduce la ansiedad y mejora la calidad del sueño.</div>
+                    </div>
+                    <div class="uses-section">
+                        <div class="uses-title">Usos recomendados</div>
+                        <ul class="uses-list">
+                            <li>Té caliente antes de dormir para inducir relajación.</li>
+                            <li>Baños de inmersión relajantes con hojas de toronjil.</li>
+                            <li>Extracto líquido para calmar palpitaciones de origen nervioso.</li>
+                        </ul>
+                    </div>
+                    <div class="contra-section">
+                        <div class="contra-title">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Contraindicaciones
+                        </div>
+                        <div class="contra-text">Evitar en personas con hipotiroidismo o que tomen sedantes.</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="add-cart-btn" data-id="toronjil" data-name="Toronjil (Bolsa 100g)" data-price="10000" data-img="Cnavis/toronjil.jpg">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Shopping Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <div class="cart-title-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <h3>Tu Pedido</h3>
+            </div>
+            <button class="cart-close" id="cartCloseBtn" aria-label="Cerrar carrito">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-body" id="cartItemsContainer">
+            <!-- Loading state / JS insertion -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-summary-row">
+                <span class="summary-label">Total a pagar:</span>
+                <span class="summary-value summary-total" id="cartTotalText">$0 COP</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Realizar Pedido
+            </button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal Form -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <!-- Form View -->
+            <div id="checkoutFormView">
+                <h3 class="checkout-title">Datos del Pedido</h3>
+                <p class="checkout-subtitle">Completa la información para coordinar el envío de tus plantas aromáticas y medicinales.</p>
+                
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label class="form-label" for="clientName">Nombre Completo</label>
+                        <input type="text" class="form-input" id="clientName" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="clientAddress">Dirección de Envío</label>
+                        <input type="text" class="form-input" id="clientAddress" required placeholder="Ej. Calle 10 #45-12, Apto 302">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="clientPhone">Teléfono / WhatsApp</label>
+                        <input type="tel" class="form-input" id="clientPhone" required placeholder="Ej. 3123456789">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="paymentMethod">Método de Pago</label>
+                        <select class="form-select" id="paymentMethod" required>
+                            <option value="Contraentrega (Efectivo)">Contraentrega (Efectivo)</option>
+                            <option value="Transferencia Bancaria (Nequi / Daviplata)">Transferencia Bancaria (Nequi / Daviplata)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="dataConsent" required>
+                        <label class="form-label-checkbox" for="dataConsent">
+                            Autorizo el tratamiento de mis datos personales para coordinar el envío de mi pedido, conforme a la Ley 1581 de 2012 (Habeas Data).
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn-cancel" id="cancelCheckoutBtn">Cancelar</button>
+                        <button type="submit" class="btn-submit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Enviar por WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Success View -->
+            <div class="success-screen" id="successView">
+                <div class="success-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h3>¡Pedido Preparado!</h3>
+                <p id="successMessage">Tu pedido ha sido procesado. Serás redirigido a WhatsApp para confirmar la entrega con nuestro asesor.</p>
+                <button class="checkout-btn" id="successCloseBtn">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal (Gallery) -->
+    <div class="modal" id="galleryModal">
+        <button class="modal-close" id="closeModal" aria-label="Cerrar galería">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        
+        <div class="modal-content">
+            <div class="modal-slider" id="modalSlider">
+                <!-- Slides will be inserted dynamically by JS -->
+            </div>
+            
+            <button class="slider-nav prev" id="prevSlide" aria-label="Anterior">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="slider-nav next" id="nextSlide" aria-label="Siguiente">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            
+            <div class="modal-counter" id="modalCounter">1 / 1</div>
+            
+            <div class="modal-info">
+                <h3 class="modal-title" id="modalTitle">Nombre de Planta</h3>
+                <p class="modal-desc">Imágenes reales recolectadas de nuestros cultivos agroecológicos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- FILTER LOGIC ---
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const plantCards = document.querySelectorAll('.plant-card');
+            const searchInput = document.getElementById('searchInput');
+
+            function filterPlants() {
+                const searchValue = searchInput.value.toLowerCase().trim();
+                const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+
+                plantCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    const title = card.querySelector('.plant-title').textContent.toLowerCase();
+                    const scientific = card.querySelector('.scientific-name').textContent.toLowerCase();
+                    const benefit = card.querySelector('.benefit-text').textContent.toLowerCase();
+                    
+                    const matchesFilter = (activeFilter === 'all' || category === activeFilter);
+                    const matchesSearch = (title.includes(searchValue) || scientific.includes(searchValue) || benefit.includes(searchValue));
+
+                    if (matchesFilter && matchesSearch) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    filterPlants();
+                });
+            });
+
+            searchInput.addEventListener('input', filterPlants);
+
+            // --- SHOPPING CART STATE & LOGIC ---
+            let cart = JSON.parse(localStorage.getItem('aap_cart')) || [];
+            
+            const cartToggleBtn = document.getElementById('cartToggleBtn');
+            const cartBadge = document.getElementById('cartBadge');
+            const cartOverlay = document.getElementById('cartOverlay');
+            const cartDrawer = document.getElementById('cartDrawer');
+            const cartCloseBtn = document.getElementById('cartCloseBtn');
+            const cartItemsContainer = document.getElementById('cartItemsContainer');
+            const cartTotalText = document.getElementById('cartTotalText');
+            const checkoutBtn = document.getElementById('checkoutBtn');
+
+            function formatPrice(num) {
+                return '$' + num.toLocaleString('es-CO') + ' COP';
+            }
+
+            function updateCartUI() {
+                // Update badge
+                const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                cartBadge.textContent = totalItems;
+                
+                // Animate badge
+                cartBadge.classList.add('bump');
+                setTimeout(() => cartBadge.classList.remove('bump'), 300);
+
+                // Render cart items
+                cartItemsContainer.innerHTML = '';
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = `
+                        <div class="cart-empty-message">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            <p>Tu carrito está vacío</p>
+                        </div>
+                    `;
+                    checkoutBtn.disabled = true;
+                    checkoutBtn.style.opacity = 0.5;
+                    checkoutBtn.style.cursor = 'not-allowed';
+                } else {
+                    checkoutBtn.disabled = false;
+                    checkoutBtn.style.opacity = 1;
+                    checkoutBtn.style.cursor = 'pointer';
+
+                    cart.forEach(item => {
+                        const itemEl = document.createElement('div');
+                        itemEl.className = 'cart-item';
+                        itemEl.innerHTML = `
+                            <img src="${item.img}" alt="${item.name}" class="cart-item-img" onerror="this.src='https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=80&w=200'">
+                            <div class="cart-item-details">
+                                <div class="cart-item-name">${item.name}</div>
+                                <div class="cart-item-price">${formatPrice(item.price * item.quantity)}</div>
+                                <div class="cart-item-ctrl">
+                                    <button class="qty-btn dec-qty" data-id="${item.id}">-</button>
+                                    <span class="qty-number">${item.quantity}</span>
+                                    <button class="qty-btn inc-qty" data-id="${item.id}">+</button>
+                                </div>
+                            </div>
+                            <button class="cart-item-remove" data-id="${item.id}" aria-label="Eliminar producto">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                </svg>
+                            </button>
+                        `;
+                        cartItemsContainer.appendChild(itemEl);
+                    });
+                }
+
+                // Update total
+                const totalCost = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                cartTotalText.textContent = formatPrice(totalCost);
+                
+                // Persist
+                localStorage.setItem('aap_cart', JSON.stringify(cart));
+            }
+
+            function addToCart(id, name, price, img) {
+                const existingItem = cart.find(item => item.id === id);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({ id, name, price: parseInt(price), img, quantity: 1 });
+                }
+                updateCartUI();
+                openCart();
+            }
+
+            function changeQuantity(id, action) {
+                const item = cart.find(item => item.id === id);
+                if (!item) return;
+
+                if (action === 'inc') {
+                    item.quantity += 1;
+                } else if (action === 'dec') {
+                    item.quantity -= 1;
+                    if (item.quantity <= 0) {
+                        cart = cart.filter(i => i.id !== id);
+                    }
+                }
+                updateCartUI();
+            }
+
+            function removeItem(id) {
+                cart = cart.filter(item => item.id !== id);
+                updateCartUI();
+            }
+
+            function openCart() {
+                cartOverlay.classList.add('active');
+                cartDrawer.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeCart() {
+                cartOverlay.classList.remove('active');
+                cartDrawer.classList.remove('active');
+                if (!document.getElementById('galleryModal').classList.contains('active') && 
+                    !document.getElementById('checkoutModal').classList.contains('active')) {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            // Bind Cart triggers
+            cartToggleBtn.addEventListener('click', openCart);
+            cartCloseBtn.addEventListener('click', closeCart);
+            cartOverlay.addEventListener('click', closeCart);
+
+            // Add to Cart buttons
+            document.querySelectorAll('.add-cart-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = btn.getAttribute('data-id');
+                    const name = btn.getAttribute('data-name');
+                    const price = btn.getAttribute('data-price');
+                    const img = btn.getAttribute('data-img');
+                    addToCart(id, name, price, img);
+                });
+            });
+
+            // Handle actions inside cart (Inc, Dec, Remove)
+            cartItemsContainer.addEventListener('click', (e) => {
+                const target = e.target.closest('button');
+                if (!target) return;
+
+                const id = target.getAttribute('data-id');
+                if (target.classList.contains('inc-qty')) {
+                    changeQuantity(id, 'inc');
+                } else if (target.classList.contains('dec-qty')) {
+                    changeQuantity(id, 'dec');
+                } else if (target.classList.contains('cart-item-remove')) {
+                    removeItem(id);
+                }
+            });
+
+            // Initialize Cart UI
+            updateCartUI();
+
+            // --- CHECKOUT & ORDER HANDLING ---
+            const checkoutModal = document.getElementById('checkoutModal');
+            const cancelCheckoutBtn = document.getElementById('cancelCheckoutBtn');
+            const orderForm = document.getElementById('orderForm');
+            const checkoutFormView = document.getElementById('checkoutFormView');
+            const successView = document.getElementById('successView');
+            const successCloseBtn = document.getElementById('successCloseBtn');
+
+            function openCheckout() {
+                if (cart.length === 0) return;
+                closeCart();
+                checkoutFormView.style.display = 'block';
+                successView.style.display = 'none';
+                checkoutModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeCheckout() {
+                checkoutModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            checkoutBtn.addEventListener('click', openCheckout);
+            cancelCheckoutBtn.addEventListener('click', closeCheckout);
+            checkoutModal.addEventListener('click', (e) => {
+                if (e.target === checkoutModal) closeCheckout();
+            });
+
+            orderForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const name = document.getElementById('clientName').value.trim();
+                const address = document.getElementById('clientAddress').value.trim();
+                const phone = document.getElementById('clientPhone').value.trim();
+                const payment = document.getElementById('paymentMethod').value;
+
+                // Create Order message for WhatsApp
+                let orderDetailsText = '';
+                let totalSum = 0;
+                cart.forEach((item, index) => {
+                    const itemCost = item.price * item.quantity;
+                    totalSum += itemCost;
+                    orderDetailsText += `${index + 1}. *${item.name}* (Cant: ${item.quantity}) - ${formatPrice(itemCost)}\n`;
+                });
+
+                const whatsAppMsg = `Hola Asociación AAP! 👋\n` +
+                    `Me gustaría realizar un pedido de plantas aromáticas y medicinales:\n\n` +
+                    `*DATOS DE ENVÍO:*\n` +
+                    `👤 *Nombre:* ${name}\n` +
+                    `📍 *Dirección:* ${address}\n` +
+                    `📞 *Teléfono:* ${phone}\n` +
+                    `💳 *Método de Pago:* ${payment}\n\n` +
+                    `*PRODUCTOS PEDIDOS:*\n` +
+                    `${orderDetailsText}\n` +
+                    `💰 *TOTAL A PAGAR:* *${formatPrice(totalSum)}*\n\n` +
+                    `Quedo atento a la confirmación de la entrega. ¡Muchas gracias!`;
+
+                const encodedMsg = encodeURIComponent(whatsAppMsg);
+                // Association phone number (assigned by user request)
+                const associationPhone = '57322551853'; 
+                const whatsAppUrl = `https://api.whatsapp.com/send?phone=${associationPhone}&text=${encodedMsg}`;
+
+                // Open WhatsApp link in a new window/tab
+                window.open(whatsAppUrl, '_blank');
+
+                // Clear cart state
+                cart = [];
+                updateCartUI();
+
+                // Switch views in modal
+                checkoutFormView.style.display = 'none';
+                successView.style.display = 'block';
+            });
+
+            successCloseBtn.addEventListener('click', closeCheckout);
+
+
+            // --- GALLERY LIGHTBOX LOGIC ---
+            const modal = document.getElementById('galleryModal');
+            const modalSlider = document.getElementById('modalSlider');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalCounter = document.getElementById('modalCounter');
+            const closeModalBtn = document.getElementById('closeModal');
+            const prevBtn = document.getElementById('prevSlide');
+            const nextBtn = document.getElementById('nextSlide');
+            
+            let currentImages = [];
+            let currentSlideIndex = 0;
+
+            function openGallery(imagesArray, title) {
+                currentImages = imagesArray;
+                currentSlideIndex = 0;
+                modalTitle.textContent = title;
+                
+                // Build slides
+                modalSlider.innerHTML = '';
+                imagesArray.forEach((imgSrc, index) => {
+                    const slide = document.createElement('div');
+                    slide.className = `modal-slide ${index === 0 ? 'active' : ''}`;
+                    
+                    const img = document.createElement('img');
+                    img.src = imgSrc;
+                    img.alt = `${title} - Imagen ${index + 1}`;
+                    
+                    // Error fallback
+                    img.onerror = () => {
+                        img.src = 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=80&w=600';
+                    };
+                    
+                    slide.appendChild(img);
+                    modalSlider.appendChild(slide);
+                });
+
+                // Update counter
+                updateCounter();
+
+                // Show/hide navigation arrows based on count
+                if (imagesArray.length <= 1) {
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                } else {
+                    prevBtn.style.display = 'flex';
+                    nextBtn.style.display = 'flex';
+                }
+
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function updateCounter() {
+                modalCounter.textContent = `${currentSlideIndex + 1} / ${currentImages.length}`;
+            }
+
+            function changeSlide(direction) {
+                const slides = document.querySelectorAll('.modal-slide');
+                if (slides.length === 0) return;
+
+                slides[currentSlideIndex].classList.remove('active');
+                
+                if (direction === 'next') {
+                    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+                } else {
+                    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+                }
+                
+                slides[currentSlideIndex].classList.add('active');
+                updateCounter();
+            }
+
+            // Bind click to gallery buttons
+            document.querySelectorAll('.gallery-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const imagesStr = btn.getAttribute('data-images');
+                    const title = btn.getAttribute('data-title');
+                    if (imagesStr) {
+                        openGallery(imagesStr.split(','), title);
+                    }
+                });
+            });
+
+            // Close gallery modal
+            function closeGallery() {
+                modal.classList.remove('active');
+                if (!cartDrawer.classList.contains('active') && 
+                    !checkoutModal.classList.contains('active')) {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            closeModalBtn.addEventListener('click', closeGallery);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeGallery();
+            });
+
+            // Slide navigation click
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                changeSlide('next');
+            });
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                changeSlide('prev');
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (modal.classList.contains('active')) {
+                    if (e.key === 'Escape') closeGallery();
+                    if (e.key === 'ArrowRight') changeSlide('next');
+                    if (e.key === 'ArrowLeft') changeSlide('prev');
+                } else if (checkoutModal.classList.contains('active')) {
+                    if (e.key === 'Escape') closeCheckout();
+                } else if (cartDrawer.classList.contains('active')) {
+                    if (e.key === 'Escape') closeCart();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
